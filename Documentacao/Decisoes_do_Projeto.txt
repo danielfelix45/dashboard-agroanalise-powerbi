@@ -1,0 +1,22 @@
+Decisões do Projeto – Dashboard Agro (Produção e Exportação)
+
+1. Exclusão do produto "Café":
+No início a ideia era analisar a produção e exportação do café também, mas decidi remover o produto “Café” da base de dados. A escolha foi por questões de foco e relevância na comparação entre os principais produtos do agronegócio selecionados: soja, milho, arroz, carne bovina, carne suína e frango.
+
+2. Período analisado – 2023 e 2024:
+Optei por trabalhar com apenas dois anos (2023 e 2024), o que permitiu uma análise mais objetiva e alinhada com a proposta de dashboard de monitoramento recente e mostrar que a quantia maior dos produtos produzido no Brasil fica no país e uma quantia menor é exportada.
+
+3. Estrutura de dados com uso de views:
+Foram criadas diversas *views* no MySQL com o objetivo de:
+- Agrupar os dados por estado, região e produto.
+- Calcular totais anuais.
+- Preparar rankings e percentuais para visualização no Power BI.
+
+4. Remoção dos slicers de Estado e Região:
+Durante os testes de usabilidade, notei que os slicers de Estado e Região causavam confusão e não agregavam valor à análise visual. Assim optei por manter apenas os slicers de Ano e Produto, que geram insights mais relevantes e com melhor usabilidade.
+
+5. Escolha dos gráficos:
+- Gráfico de rosca para % exportado (visual limpo e intuitivo).
+- Gráficos de colunas empilhadas e barras clusterizado para ranking de regiões/estados (visual comparativo).
+- Gráficos de linha para evolução anual (produção e exportação).
+- Cartões com totais estratégicos.

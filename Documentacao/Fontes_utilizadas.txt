@@ -1,0 +1,33 @@
+Fontes Utilizadas
+
+1. Dados simulados:
+- Os dados utilizados foram colhidos de fontes públicas como SIDRA-IBGE e ComexStat.
+- Planilhas em Excel com os seguintes dados:
+  - Fonte dos dados
+  - Produção e exportação por estado e ano
+  - Classificação por região
+  - Lista de produtos agrícolas e carnes
+  - Lista estados e regiões
+
+2. Ferramentas:
+- MySQL 8.0 – Criação das views com agrupamentos e filtros
+- Power BI Desktop – Visualização e modelagem dos dados
+- Excel – Organização inicial dos dados e planejamento das tabelas
+
+3. Visualizações:
+- Gráfico de rosca
+- Gráficos de barras e colunas
+- Gráfico de linha
+- Cartões e slicers interativos
+
+4. Paleta de cores:
+- Cabeçalho: #28976A
+- Corpo (gradiente): #04624C → #A7C93D
+- Cores usadas em textos: branco (#FFFFFF), tons de verde (#236C54)
+- Cores recomendadas para gráficos:
+  - Rosca: tons de verde (#28976A) e rosa (#F25C54)
+  - Linhas: verde limão (#A7C93D) e tons de verde (#28976A
+  - Barras: tons médios de verde (#28976A) verde limão (#A7C93D)
+
+5. Imagem do dashboard:
+- Adicionada na pasta "Imagens e Visual", representando o layout final com identidade visual definida.

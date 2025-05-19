@@ -1,0 +1,52 @@
+Explicação da Metodologia
+
+1. Coleta e organização dos dados:
+Os dados foram coletados e organizados inicialmente em planilhas do Excel, separando por produto, estado, ano e volume de produção e exportação.
+
+2. Modelagem no MySQL:
+Criei views específicas no banco de dados MySQL para:
+- Agrupar dados por estado, produto e ano.
+- Calcular total produzido e exportado.
+- Criar rankings e filtros otimizados para o Power BI.
+
+3. Conexão e modelagem no Power BI:
+Importei as views e tabelas dimensionais (produtos, estados, regiões) e realizei o relacionamento entre elas garantindo a integridade referencial.
+
+4. Criação de medidas DAX:
+Foi criada as medidas:
+- Exportação = SUM('EvolucaoAnualProducaoExportacao'[total_exportado]) 
+Soma o total exportado por ano, usado em gráficos de linha e análises de evolução.
+- Producao = SUM('EvolucaoAnualProducaoExportacao'[total_produzido])
+Soma o total produzido por ano, também utilizada nas análises de evolução.
+- % Exportado Ano = DIVIDE([Exportação], [Produção], 0)
+Calcula o percentual exportado em relação à produção total no ano, permitindo avaliar a eficiência exportadora anual.
+- Total Exportado = SUM('FatosProducao'[Exportacao])
+Soma total de exportações por filtro selecionado, usado em cartões e medidas auxiliares.
+- Total Produzido = SUM('FatosProducao'[Producao_Total])
+Soma total produzido considerando os filtros ativos.
+- Total Consumo Interno = SUM('FatosProducao'[Consumo_Interno])
+Soma do consumo interno, útil para comparar com a exportação.
+- % Exportado = DIVIDE([Total Exportado], [Total Produzido], 0)
+Percentual de exportação baseado no total produzido, em qualquer recorte selecionado.
+- % Consumo Interno = DIVIDE([Total Consumo Interno], [Total Produzido], 0)
+Percentual do que foi consumido internamente, comparando com o total produzido.
+- % Exportado Selecionado = DIVIDE(SUM('FatosProducao'[Exportacao]), SUM('FatosProducao'[Producao_Total]))
+Percentual exportado considerando os filtros ativos (produto, ano), utilizado na rosca de exportação.
+- % Não Exportado Selecionado = 1 - [% Exportado Selecionado]
+Percentual que representa o consumo interno, complementar ao exportado na visualização em gráfico de rosca.
+- % Exportado Formatado = FORMAT([% Exportado Selecionado], "0.0%")
+Formata a medida para exibição em cartões ou labels.
+- CategoriasExportacao = DATATABLE("Categoria", STRING, { {"Exportado"}, {"Não Exportado"} })
+Tabela auxiliar usada para alimentar o gráfico de rosca que compara exportação x consumo interno.
+-ValorExportacao = SWITCH(SELECTEDVALUE(ExportacaoAno[Categoria]), "Exportado", [% Exportado Selecionado], "Não Exportado", [% Não Exportado Selecionado])
+Essa medida faz a ligação entre a categoria da rosca (Exportado/Não Exportado) e os percentuais correspondentes, tornando possível a exibição correta dos dados no gráfico.
+
+5. Visualizações:
+- Gráfico de rosca para mostrar % exportado por produto.
+- Gráficos de colunas empilhadas e barras clusterizado para ranking de regiões/estados (visual comparativo).
+- Gráficos de linha e área para evolução anual.
+- Cartões com total produzido e exportado.
+- Slicers de ano e produto para análise dinâmica.
+
+6. Layout e identidade visual:
+Escolhi uma paleta de cores padronizada, com verde predominante, e organizei os elementos de forma clara.
