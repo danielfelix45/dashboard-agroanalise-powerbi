@@ -19,7 +19,9 @@ Fornecer insights estratégicos sobre o volume produzido, exportado e consumido 
 
 ---
 
-![Dashboard Agro](Imagens_e_Visuals/dashboard-final.png)
+## Vídeo do Dashboard
+
+![Dashboard Agro](Imagens_e_Visuals/Video_dashoboard_agro.mp4)
 
 ---
 
