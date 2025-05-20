@@ -19,6 +19,10 @@ Fornecer insights estratégicos sobre o volume produzido, exportado e consumido 
 
 ---
 
+![Dashboard Agro](Imagens_e_Visuals/dashboard-final.png)
+
+---
+
 ## Técnicas Aplicadas
 
 - Modelagem de dados e integridade referencial
@@ -44,7 +48,6 @@ Fornecer insights estratégicos sobre o volume produzido, exportado e consumido 
 ├── dashboard.pbix
 └── README.md
 
-
 ---
 
 ## Tecnologias Utilizadas
@@ -61,11 +64,10 @@ Fornecer insights estratégicos sobre o volume produzido, exportado e consumido 
 **Daniel Félix**  
 Estudante de Análise e Desenvolvimento de Sistemas  
 Email: felixdaniel-developer@outlook.com  
-LinkedIn: [linkedin.com/in/daniel-felix-developer]([https://linkedin.com/in/seu-perfil](https://www.linkedin.com/in/daniel-felix-developer/))
+LinkedIn: [linkedin.com/in/daniel-felix-developer](<[https://linkedin.com/in/seu-perfil](https://www.linkedin.com/in/daniel-felix-developer/)>)
 
 ---
 
 ## Licença
 
 Este projeto está licenciado sob a licença MIT. Sinta-se à vontade para utilizá-lo como inspiração.
-
