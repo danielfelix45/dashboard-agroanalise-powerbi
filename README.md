@@ -1,10 +1,26 @@
 # Dashboard de Exportação Agropecuária | Power BI
 
-Este projeto apresenta um dashboard interativo desenvolvido no Power BI, com foco na análise da produção e exportação de produtos agropecuários brasileiros nos anos de 2023 e 2024.
+Projeto de análise de dados desenvolvido para transformar informações do setor agropecuário em insights estratégicos por meio de visualizações interativas.
 
 ## Objetivo
 
 Fornecer insights estratégicos sobre o volume produzido, exportado e consumido internamente de produtos como soja, milho, arroz, carne bovina, carne suína e frango. O dashboard permite identificar os estados e regiões com maior desempenho, além de acompanhar a evolução anual da produção e exportação.
+
+---
+
+## Problema Resolvido
+
+Os dados agropecuários muitas vezes estão dispersos e de difícil interpretação, dificultando a análise de desempenho por região e produto.
+
+Este dashboard resolve esse problema ao consolidar as informações em uma visualização clara e interativa, facilitando a tomada de decisões baseada em dados.
+
+---
+
+## Problema Resolvido
+
+Os dados agropecuários muitas vezes estão dispersos e de difícil interpretação, dificultando a análise de desempenho por região e produto.
+
+Este dashboard resolve esse problema ao consolidar as informações em uma visualização clara e interativa, facilitando a tomada de decisões baseada em dados.
 
 ---
 
@@ -66,7 +82,7 @@ Fornecer insights estratégicos sobre o volume produzido, exportado e consumido 
 **Daniel Félix**  
 Estudante de Análise e Desenvolvimento de Sistemas  
 Email: felixdaniel-developer@outlook.com  
-LinkedIn: [linkedin.com/in/daniel-felix-developer](<[https://linkedin.com/in/seu-perfil](https://www.linkedin.com/in/daniel-felix-developer/)>)
+LinkedIn: [LinkedIn](https://www.linkedin.com/in/daniel-felix-developer/)
 
 ---
 
