@@ -16,14 +16,6 @@ Este dashboard resolve esse problema ao consolidar as informações em uma visua
 
 ---
 
-## Problema Resolvido
-
-Os dados agropecuários muitas vezes estão dispersos e de difícil interpretação, dificultando a análise de desempenho por região e produto.
-
-Este dashboard resolve esse problema ao consolidar as informações em uma visualização clara e interativa, facilitando a tomada de decisões baseada em dados.
-
----
-
 ## Principais Funcionalidades
 
 - **Slicers interativos**: Produto e Ano
